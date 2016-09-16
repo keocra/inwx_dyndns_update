@@ -1,0 +1,14 @@
+{
+    "update_url": "https://api.domrobot.com/xmlrpc/",   // the xml rpc endpoint of inwx, checkout the documentation of inwx at https://www.inwx.de/de/help/apidoc/f/ch01.html
+    "ip_page": "https://ip.dblx.io",                    // endpoint to get the current external ip, must return only the ip as output
+    "urls": [                                           // you can have as many update entries here as you want, just copy the example und insert appropriate values
+        {
+            "username": "<ask>",                        // your username at inwx, <ask> means the script requires your input at runtime
+            "password": "<ask>",                        // your password at inwx, <ask> means the script requires your input at runtime
+            "shared_secret": null,                      // used if two factor auth is enabled
+            "tld": "<ask>",                             // tld to work on, <ask> means the script requires your input at runtime
+            "domain": "<ask>",                          // subdomain name to update --> may not be empty, <ask> means the script requires your input at runtime
+            "overwrite": false                          // if the domain entry is already existing it will be overwritten if set to true
+        }
+    ]
+}

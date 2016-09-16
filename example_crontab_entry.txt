@@ -1,0 +1,6 @@
+# Before pasting it to your crontab replace <PATH> with the 
+# path to the current folder where your inwx update script
+# resides
+
+# Run every four hours once
+0 */4 * * * <PATH>/start.sh
